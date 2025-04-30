@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Marrakech",
+        "arabicName": "مراكش",
+        "description": "Known as the Red City, Marrakech is famous for its vibrant souks, historic palaces, and the bustling Jemaa el-Fnaa square.",
+        "detailedDescription": "Marrakech is a former imperial city in western Morocco and a major economic center. The city's medina quarter is a UNESCO World Heritage Site with winding narrow streets, traditional markets, and the famous Jemaa el-Fnaa square. Surrounded by the Atlas Mountains, it offers a blend of ancient traditions and modern amenities.",
+        "region": "Marrakech-Safi",
+        "population": 928,
+        "attractions": ["Jardin Majorelle", "Bahia Palace", "Koutoubia Mosque", "Jemaa el-Fnaa", "Saadian Tombs"],
+        "coordinates": [31.6295, -7.9811],
+        "urlImage": "https://i.pinimg.com/736x/f2/a9/df/f2a9dfcafa42eec8844086e29f262ea3.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Casablanca",
+        "arabicName": "الدار البيضاء",
+        "description": "Morocco's largest city and economic capital, featuring the magnificent Hassan II Mosque and a blend of modern and traditional architecture.",
+        "detailedDescription": "Casablanca is the largest city in Morocco and one of the largest financial centers on the African continent. The city is Morocco's chief port and industrial center. While it's more modern than other Moroccan cities, Casablanca has several historical and architectural landmarks, including the Hassan II Mosque, one of the largest mosques in the world.",
+        "region": "Casablanca-Settat",
+        "population": 3359,
+        "attractions": ["Hassan II Mosque", "Corniche", "Mohammed V Square", "Royal Palace of Casablanca", "Old Medina"],
+        "coordinates": [33.5731, -7.5898],
+        "urlImage": "https://i.pinimg.com/736x/81/a7/fc/81a7fcaec040b115ba1e6f72de14696e.jpg"
+    },
+    {
+        "name": "Fes",
+        "arabicName": "فاس",
+        "description": "Morocco's cultural and spiritual center with the world's oldest university and a well-preserved medieval old city.",
+        "detailedDescription": "Fez is the second largest city in Morocco and serves as the country's cultural and spiritual center. Its walled medina, Fes el Bali, is one of the world's largest car-free urban areas and a UNESCO World Heritage site. The city is home to the University of Al Quaraouiyine, founded in 859 and considered the oldest continuously operating university in the world.",
+        "region": "Fès-Meknès",
+        "population": 1112,
+        "attractions": ["Fes el Bali (Old Medina)", "Bou Inania Madrasa", "Al-Attarine Madrasa", "Nejjarine Museum", "Chouara Tannery"],
+        "coordinates": [34.0181, -5.0078],
+        "urlImage": "https://i.pinimg.com/736x/35/20/61/352061d304dca7272fa974c390d1f161.jpg"
+    },
+    {
+        "name": "Chefchaouen",
+        "arabicName": "شفشاون",
+        "description": "The Blue Pearl of Morocco, known for its striking blue-washed buildings nestled in the Rif Mountains.",
+        "detailedDescription": "Chefchaouen, often known as the 'Blue City' or 'Blue Pearl,' is a town in the Rif Mountains of northwest Morocco. Known for its blue-washed buildings in its old town (medina), it offers a relaxed atmosphere that contrasts with the hustle of larger Moroccan cities. The blue color is said to symbolize the sky and heaven, and was introduced by Jewish refugees who settled there in the 1930s.",
+        "region": "Tangier-Tetouan-Al Hoceima",
+        "population": 42786,
+        "attractions": ["Blue Medina", "Ras Elma", "Kasbah Museum", "Spanish Mosque", "Outa el-Hammam Square"],
+        "coordinates": [35.1716, -5.2697],
+        "urlImage": "https://i.pinimg.com/736x/ca/4c/a2/ca4ca2201611bf775355f9ac84b3b47f.jpg"
+    },
+    {
+        "name": "Rabat",
+        "arabicName": "الرباط",
+        "description": "Morocco's capital city, featuring historic landmarks, clean beaches, and a more relaxed atmosphere than other major cities.",
+        "detailedDescription": "Rabat is the capital city of Morocco and is located on the Atlantic Ocean at the mouth of the Bou Regreg river. The city is known for its Islamic and French-colonial heritage, featuring historic sites alongside modern neighborhoods. As the political and administrative center of Morocco, Rabat offers a blend of traditional and contemporary Moroccan culture.",
+        "region": "Rabat-Salé-Kénitra",
+        "population": 577827,
+        "attractions": ["Hassan Tower", "Chellah", "Kasbah of the Udayas", "Mohammed V Mausoleum", "Rabat Archaeological Museum"],
+        "coordinates": [34.0209, -6.8416],
+        "urlImage": "https://i.pinimg.com/736x/0a/f5/08/0af508568f681a36320444475cecd7dd.jpg"
+    },
+    {
+        "name": "Essaouira",
+        "arabicName": "الصويرة",
+        "description": "A charming coastal town known for its strong winds, historic medina, and vibrant arts scene.",
+        "detailedDescription": "Essaouira is a port city and resort on Morocco's Atlantic coast. Its medina (old town) is a UNESCO World Heritage site, known for its European and Moorish architecture. The city is famous for its strong winds, making it a popular destination for windsurfing and kitesurfing. Essaouira has a rich cultural history and hosts the annual Gnaoua World Music Festival.",
+        "region": "Marrakech-Safi",
+        "population": 77966,
+        "attractions": ["Skala de la Ville", "Essaouira Medina", "Essaouira Beach", "Port of Essaouira", "Sidi Mohammed Ben Abdallah Museum"],
+        "coordinates": [31.5085, -9.7595],
+        "urlImage": "https://i.pinimg.com/736x/4f/74/09/4f74093c0c9691b9360c73991a92ae38.jpg"
+    },
+    {
+        "name": "Tangier",
+        "arabicName": "طنجة",
+        "description": "A major city in northern Morocco with a rich international history and strategic location at the entrance to the Mediterranean.",
+        "detailedDescription": "Tangier is a major city in northwestern Morocco. Located on the Maghreb coast at the western entrance to the Strait of Gibraltar, it has historically been a strategic gateway between Africa and Europe. The city has a rich international history, having been a trading center for many centuries and an international zone from 1923 to 1956. Today, it's an important port city with a diverse cultural heritage.",
+        "region": "Tangier-Tetouan-Al Hoceima",
+        "population": 947952,
+        "attractions": ["Kasbah Museum", "Caves of Hercules", "American Legation", "Cape Spartel", "Grand Socco"],
+        "coordinates": [35.7595, -5.8340],
+        "urlImage": "https://media.gq.com/photos/564b5ae85b03b0647d16556d/16:9/w_1920,c_limit/rock-the-kasbah-gq-1215-5.jpg"
+    },
+    {
+        "name": "Agadir",
+        "arabicName": "أكادير",
+        "description": "A popular beach resort destination with modern infrastructure and year-round sunshine.",
+        "detailedDescription": "Agadir is a major city in Morocco located on the shore of the Atlantic Ocean, in the southern part of the country. The city is famous for its beaches, seaside resorts, and vibrant nightlife. After being destroyed by an earthquake in 1960, Agadir was completely rebuilt with modern architecture, making it distinctly different from traditional Moroccan cities.",
+        "region": "Souss-Massa",
+        "population": 421844,
+        "attractions": ["Agadir Beach", "Kasbah of Agadir Oufella", "Souk El Had", "Valley of the Birds", "Crocoparc"],
+        "coordinates": [30.4278, -9.5981],
+        "urlImage": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=300&q=80"
+    },
+    {
+        "name": "Meknes",
+        "arabicName": "مكناس",
+        "description": "An imperial city known for its impressive monuments, grand gateways, and historic architecture.",
+        "detailedDescription": "Meknes is one of the four Imperial cities of Morocco and its medina is listed as a UNESCO World Heritage Site. Founded in the 11th century by the Almoravids as a military settlement, Meknes became the capital of Morocco under Sultan Moulay Ismail in the 17th century. The city is known for its impressive monuments, including the massive Bab Mansour gate and the Sultan's mausoleum.",
+        "region": "Fès-Meknès",
+        "population": 632079,
+        "attractions": ["Bab Mansour", "Mausoleum of Moulay Ismail", "Heri es-Souani", "Dar Jamai Museum", "Place el-Hedim"],
+        "coordinates": [33.8935, -5.5550],
+        "urlImage": "https://maroc-diplomatique.net/wp-content/uploads/2024/02/vue-mosquee-quaraouiyine-1-e1707823702408.png"
+    }
+    
+]

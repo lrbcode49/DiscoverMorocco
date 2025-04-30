@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover M o r o c c o by MR lrbcode49 </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/flags/4x3/ma.svg" type="image/x-icon">
+    
+
+
+</head>
+<body>
+
+    <header>
+            
+            <div style="display: flex;">
+            <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/flags/4x3/ma.svg" alt="Morocco Flag" style="width: 50px;"> 
+            <h1 style="background: linear-gradient(to right, #dc2626, #ef4444, #16a34a); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Morocco Explorer</h1>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#containercity"> Cities</a></li>
+                    <li><a href="#contenttimee"> Prayer Times</a></li>
+                    <li><a href="#containerMap"> Map</a></li>
+                    <li><a href="#About"> About</a></li>
+                </ul>
+
+            </div>
+    </header>
+
+
+
+    <!-- home info  -->
+     <div id="home">
+       
+        <div class="info-home">
+            <h1 id="typing-animation" style="font-size: 3rem; font-weight: bold; color: #dc2626; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+                <span style="color: #16a34a;">Discover</span> Morocco
+            </h1>
+
+            <p style="font-size: 1.2rem; color: #333; line-height: 1.6; margin-top: 10px;"></p>
+                Explore enchanting cities, rich culture, and experience authentic Moroccan traditions. Get accurate prayer times for every city in Morocco.
+            </p>
+                <button onclick="document.querySelector('#containercity').scrollIntoView({behavior:'smooth'})" id="ExplorCities" > Explor Cities </button>
+                <button onclick="GetPrayertimes(getdata.name); document.querySelector('#allmonthly').scrollIntoView({behavior: 'smooth'});  getallmonthly(getdata.name)" id="PrayerTimes"> Prayer Times  </button>
+        </div>
+
+
+    
+        <div>
+            <img src="https://www.maroc.ma/sites/default/files/inline-images/SM--2-_1.png" alt="image-m6" style="width: auto; height: 600px;box-shadow: var(--box-shadow); border-radius: 30px;">
+        </div>
+
+     </div>
+
+         <!-- Featured Cities Carousel -->
+    <div class="container">
+        <h2 style="font-size: 30px;">
+            Featured Destinations
+        </h2>
+
+        <div id="slide">
+            <div class="overlay">
+                <h1>Fes</h1>
+                <p>
+                    Morocco's cultural and spiritual center with the world's oldest university and a well-preserved medieval old city.
+                </p>
+                <button class="explorCitybtn">Explore Fes</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- card city  -->
+    <div id="containercity">
+        <h2 style="font-size: 30px; ">
+            Explore Moroccan Cities 
+        </h2>
+        
+        <div class="cardcity">
+
+        </div>
+    </div>
+    <!-- //card city//  -->
+
+
+
+
+
+    <!-- Prayer Times --> 
+    <div  style=" margin-left: 100px;">
+        <h2>Prayer Times</h2>
+        <label for="selectcity" style="font-size: 18px; color: #333;">Select City</label><br>
+        <select id="selectcity" style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px; margin-top: 10px;">
+            <option value="SelectCity">Select City</option>
+        </select>
+    </div>
+
+    <div class="prayerTimes">
+
+        <div class="prayertimesCOntainer">
+            <div id="contenttimee">
+            </div>
+        </div>
+
+
+
+        <!-- all monthly -->
+        <div id="allmonthly" style="display: none;">
+            <h2>Monthly View</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>FAJR</th>
+                        <th>DHUHR</th>
+                        <th>ASR</th>
+                        <th>MAGHRIB</th>
+                        <th>ISHA</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="tbody">
+                   
+    
+                </tbody>
+            </table>
+    
+
+
+        </div>
+
+        
+    </div>
+
+    <!-- //Prayer Times// -->
+
+
+
+
+
+    <!-- Map  -->
+    <div id="containerMap">
+        <div  style=" margin-left: 50px;  ">
+            <h2>Interactive Map</h2>
+            <p>
+                Explore Morocco's geography and locate key cities and attractions.
+            </p>
+        </div>
+
+    
+
+        <div id="boxmap">
+    
+        </div>
+
+    </div>
+    <!-- ///// -->
+
+
+
+
+
+    <div class="container2">
+
+        <div class="card card0">
+            <div class="overlay">
+
+                <h2>@Mohammed VI</h2>
+
+            </div>
+            
+        </div>
+
+        <div class="card card1">
+            <div class="overlay">
+                <h2>@Hassan II</h2>
+            </div>
+            
+        </div>
+
+
+        <div class="card card2">
+            <div class="overlay">
+                <h2>@El-Hassan</h2>
+            </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+    <!-- About Morocco  -->
+     <div id="About">
+       
+        <div >
+            <h2> About Morocco </h2>
+            <h4>The Kingdom of Morocco</h4>
+            <p>
+                Morocco, officially the Kingdom of Morocco, is a country located in the Maghreb region of North Africa. It is characterized by its diverse geography, rich history, and cultural significance as a bridge between Africa and Europe.
+            </p>
+            <p>
+                With a population of over 36 million, Morocco boasts a blend of Arab, Berber, European, and African cultural influences that are reflected in its architecture, cuisine, music, and traditions.
+            </p>
+            <h4>Key Facts</h4>
+            <ul>
+                <li><b>Capital: </b>Rabat</li>
+                <li><b>Largest City: </b>Casablanca</li>
+                <li><b>Official Languages: </b>Arabic and Berber</li>
+                <li><b>Currency: </b>Moroccan Dirham (MAD)</li>
+                <li><b>Government: </b>Constitutional monarchy</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="https://www.maroc.ma/sites/default/files/inline-images/SM--2-_1.png" alt="image-m6" style="width: auto; height: 600px;box-shadow: var(--box-shadow); border-radius: 30px;">
+        </div>
+
+
+     </div>
+    <!-- ////// -->
+
+
+    <footer>
+        <div>
+            <p>&copy; 2025 Morocco Explorer. Web developed BY MR lrbcode49</p>
+           
+        </div>
+    </footer>
+
+
+    
+<script src="js/app.js"></script>
+</body>
+</html>
