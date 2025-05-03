@@ -2,9 +2,8 @@
 
 let slided = document.getElementById('slide')
 let cardcity = document.querySelector(".cardcity")
-let selectcity = document.getElementById('selectcity')
+let selectcity = document.getElementById('selectcity') //
 let allmonthly = document.getElementById('allmonthly')
-
 
 function slide(){
     axios.get("./CityMa.json")
@@ -15,7 +14,7 @@ function slide(){
             slide.innerHTML = ""
             slided.innerHTML = `
             <div class="overlay">
-            <h1>${data[i].name}</h1>
+            <h1>${data[i].name}</h1>  
             <p>
             ${data[i].description}
             </p>
@@ -49,7 +48,6 @@ function slide(){
                     
             `
             let option = document.createElement("option")
-            option.value = getdata.name
             option.textContent = getdata.name
             selectcity.appendChild(option)
 
@@ -109,63 +107,18 @@ function GetPrayertimes(cityname){
 
 }
 
-// get all city in select option
-selectcity.addEventListener("change", () =>{
-    let selectedoption = selectcity.options[selectcity.selectedIndex]
-    if(selectedoption.value ===  "SelectCity"){
-        alert("Please select a city")
-        return
-    }
-    axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${selectedoption.textContent}&country=Morocco`)
-    .then((response) =>{
-        let city = response.data.data.timings
-        let date =   response.data.data
-        let prayertimesCOntainer = document.querySelector('.prayertimesCOntainer')
-        prayertimesCOntainer.innerHTML = ""
-        prayertimesCOntainer.innerHTML += `
-        
-                <h2 style="text-align: center; font-size: 30px;">${selectedoption.textContent} </h2>
-                <p style="text-align: center; color: var(--secondary-color);">${date.date.readable}</p>
-                
-                <div id="contenttimee">
-                 <section>
-                    <h3><b>Fajr</b></h3>
-                    <p>${city.Fajr}</p>
-                </section>
-                <section>
-                    <h3><b>Dhuhr</b></h3>
-                    <p>${city.Dhuhr}</p>
-                </section>
-                 <section>
-                    <h3><b>Asr</b></h3>
-                    <p>${city.Asr}</p>
-                </section>
-                <section>
-                    <h3><b>Maghrib</b></h3>
-                    <p> ${city.Maghrib}</p>
-                </section>
-                 <section>
-                    <h3><b>Isha</b></h3>
-                    <p>${city.Isha}</p>
-                </section>
-                
-                </div>
-        `
-        document.querySelector('.prayerTimes').scrollIntoView({
-            behavior: "smooth",
-        })
-        // scroll({
-        //     top: prayertimesCOntainer.offsetTop,
-        //     behavior: "smooth"
-        // })
-        getallmonthly(selectedoption.textContent)
-
-
-    }).catch((err) => {
-        console.log(err.message)
+//select option
+selectcity.addEventListener("change", function(){
+    if(this.value === "Select City")alert("select your city")
+    GetPrayertimes(this.value)
+    document.querySelector('.prayerTimes').scrollIntoView({
+        behavior: "smooth",
     })
-    
-
+    // scroll({
+    //     top: prayertimesCOntainer.offsetTop,
+    //     behavior: "smooth"
+    // })
+    getallmonthly(this.value)
 
 
 } )
