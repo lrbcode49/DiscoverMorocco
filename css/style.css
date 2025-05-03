@@ -269,7 +269,7 @@ header ul > li > a:hover{
 
 
 
-.cityget:hover :not(:hover){
+.cardcity:hover > :not(:hover){
     transition: 300ms  ease-in-out;
     opacity: 0.8;
     filter: blur(10px);
